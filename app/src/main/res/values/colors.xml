@@ -3,4 +3,23 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="light_yellow">#fcf357</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#5d4063</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="form_filling">#FFFFFF</color>
+    <color name="form_filled">#eeeeee</color>
+    <color name="yellow">#E09B26</color>
+    <color name="blue">#12CBC4</color>
+    <color name="android_green">#A3CB38</color>
+    <color name="lavender_tea">#D980FA</color>
+    <color name="turkish_aqua">#006266</color>
+    <color name="pixel_grass">#009432</color>
+    <color name="energos">#C4E538</color>
+
+
+    <color name="button">#127c72</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+    <color name="forgotten_purple">#9980FA</color>
 </resources>

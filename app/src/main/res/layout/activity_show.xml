@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abyandafa.multipolartest.show.ShowActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView android:text="No"
+                        android:id="@+id/title_id"
+                        android:background="@drawable/table_cell"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"/>
+                    <TextView android:text="Input"
+                        android:id="@+id/title_input"
+                        android:background="@drawable/table_cell"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_column="1"
+                        android:layout_weight="6"/>
+                    <TextView android:text="Output"
+                        android:id="@+id/title_output"
+                        android:background="@drawable/table_cell"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_column="1"
+                        android:layout_weight="6"/>
+                    <TextView android:text="Tanggal Proses"
+                        android:id="@+id/title_tanggal"
+                        android:background="@drawable/table_cell"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_column="1"
+                        android:layout_weight="4"/>
+                    <TextView android:text="Kata ulang"
+                        android:id="@+id/title_kata"
+                        android:background="@drawable/table_cell"
+                        android:padding="5dp"
+                        android:layout_width="0dp"
+                        android:layout_column="1"
+                        android:layout_weight="4"/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
