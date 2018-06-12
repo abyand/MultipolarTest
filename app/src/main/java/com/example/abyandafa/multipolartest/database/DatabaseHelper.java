@@ -61,11 +61,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Log.d("KUSINC", "insert: " + kataBerulang);
 
         Date c = Calendar.getInstance().getTime();
-
-
         SimpleDateFormat df = new SimpleDateFormat("dd MMMM yyyy");
         String formattedDate = df.format(c);
-
 
         ContentValues values = new ContentValues();
         // `id` and `timestamp` will be inserted automatically.

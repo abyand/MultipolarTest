@@ -71,11 +71,12 @@ public class MainPresenter implements MainMVP.ViewPresenter, MainMVP.ModelPresen
     {
         String regex = "\\b(\\w+)(\\W+\\1\\b)+";
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-        String output = "";
+        String output = input;
 
         Matcher m = p.matcher(input);
         while (m.find()) {
-            output = input.replaceAll(m.group(), m.group(1));
+            output = output.replaceAll(m.group(), m.group(1));
+            Log.d("KEKEKE", "removeConsecutiveSameWord: " + output);
             addListBasic2Output(m.group(), input);
         }
         return output;
@@ -108,13 +109,15 @@ public class MainPresenter implements MainMVP.ViewPresenter, MainMVP.ModelPresen
 
     @Override
     public void startSaveToServerDatabase(String input) {
-
+        filterInput(input);
+        this.model.saveToServerDatabase(input, output1, listOutput2);
     }
 
+
     @Override
-    public void onSaveToLocalFinished(boolean isSuccess) {
-        if(isSuccess) this.view.showToast("Success");
-        else this.view.showToast("Failed");
+    public void onSaveFinished(boolean isSuccess, String message) {
+        if(isSuccess) this.view.showToast(message);
+        else this.view.showToast(message);
     }
 
     @Override

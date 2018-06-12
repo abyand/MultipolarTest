@@ -137,6 +137,10 @@ public class MainActivity extends AppCompatActivity implements MainMVP.View {
                     vPresenter.startSaveToLocalDatabase(input);
 
                 }
+                else
+                {
+                    vPresenter.startSaveToServerDatabase(input);
+                }
             }
         });
         builder.show();
@@ -165,15 +169,7 @@ public class MainActivity extends AppCompatActivity implements MainMVP.View {
         builder.show();
     }
 
-    @Override
-    public void toLocalDatabaseActivity() {
 
-    }
-
-    @Override
-    public void toServerDatabaseActivity() {
-
-    }
 
     @Override
     public void onFilterFinished(String result) {

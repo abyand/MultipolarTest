@@ -21,8 +21,6 @@ public interface MainMVP {
         void setProgressVisibility(boolean isVisble);
         void showOptionSaveDatabase();
         void showOptionGetDatabase();
-        void toLocalDatabaseActivity();
-        void toServerDatabaseActivity();
         void onFilterFinished(String result);
         void onBasic2ResultFinished(List<OutputBasic2> result);
 
@@ -36,13 +34,13 @@ public interface MainMVP {
     }
 
     interface ModelPresenter extends BaseMVP.ModelPresenter{
-        void onSaveToLocalFinished(boolean isSuccess);
+        void onSaveFinished(boolean isSuccess, String message);
         Context getContext();
     }
 
     interface Model{
         void saveToLocalDatabase(String input, String output, List<OutputBasic2> output2);
-        void saveToServerDatabase(String input, String output, String output2);
+        void saveToServerDatabase(String input, String output, List<OutputBasic2> output2);
     }
 
 }
