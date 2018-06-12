@@ -52,6 +52,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/basic_2_view"
                 android:visibility="gone"
+                android:backgroundTint="@color/energos"
                 android:minHeight="150dp"
                 android:layout_width="match_parent"
                 android:layout_margin="15dp"
@@ -63,47 +64,45 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:text="Output Ke 2"
-                    android:textColor="@android:color/black"
-                    android:backgroundTint="@android:color/white"
+                    android:textColor="@android:color/white"
                     />
 
             </android.support.v7.widget.CardView>
             <LinearLayout
-                android:layout_marginRight="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
                 <Button
                     android:id="@+id/save_to_db"
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/android_green"
+                    android:backgroundTint="@color/button_save"
                     android:text="Save"/>
                 <Button
                     android:id="@+id/start_filter"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/pixel_grass"
+                    android:backgroundTint="@color/button_filter"
                     android:text="Filter"/>
             </LinearLayout>
             <Button
                 android:id="@+id/show_output_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
+                android:layout_gravity="center_horizontal"
                 android:backgroundTint="@color/forgotten_purple"
                 android:textColor="@color/white"
-                android:layout_marginRight="15dp"
                 android:text="show output 2"/>
             <Button
                 android:id="@+id/show_database"
+                android:textColor="@color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:backgroundTint="@color/lavender_tea"
-                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/button_show_database"
                 android:text="Show from database"/>
         </LinearLayout>
     </ScrollView>

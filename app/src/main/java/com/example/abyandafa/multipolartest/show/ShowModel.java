@@ -59,11 +59,7 @@ public class ShowModel implements ShowMVP.Model {
                 int j = 100;
                 while (output.length()> j )
                 {
-                    Log.d("KALALA", "updateValue j: " + j);
-                    Log.d("AZAS", "updateValue outputlength: " + output.length());
-                    Log.d("AZAS", "updateValue id current: " + currentRow.getId());
                     char a = output.charAt(j);
-                    Log.d("AZAS", "updateValue nilai a: " + a);
                     if(Character.toString(a).equals(" "))
                     {
                         j++;
@@ -87,7 +83,6 @@ public class ShowModel implements ShowMVP.Model {
                 this.mPresenter.getContext().getResources().getString(R.string.baseUrl)+"/getrows", obj, response -> {
             try {
 
-                Log.d("Ternaknesia", response.getString("response"));
 
                 if(response.getString("response").equals("Success"))
                 {
@@ -129,7 +124,6 @@ public class ShowModel implements ShowMVP.Model {
                 String output = currentObject.getString("output");
                 String tanggal = currentObject.getString("tanggal_proses");
                 String kataUlang = currentObject.getString("kata_berulang");
-                Log.d("WKWKWKSD", "getListData: " + kataUlang);
 
                 BasicTableClass currentRow = new BasicTableClass(id, input, output, tanggal, kataUlang);
 

@@ -16,9 +16,11 @@
     <color name="lavender_tea">#D980FA</color>
     <color name="turkish_aqua">#006266</color>
     <color name="pixel_grass">#009432</color>
-    <color name="energos">#C4E538</color>
-
-
+    <color name="energos">#3c3b6e</color>
+    <color name="button_save">#154981</color>
+    <color name="button_filter">#6f8ba9</color>
+    <color name="button_show">#154981</color>
+    <color name="button_show_database">#646496</color>
     <color name="button">#127c72</color>
     <color name="background_holo_light">#fff3f3f3</color>
     <color name="forgotten_purple">#9980FA</color>
