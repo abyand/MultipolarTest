@@ -69,12 +69,14 @@ public class MainPresenter implements MainMVP.ViewPresenter, MainMVP.ModelPresen
 
     public String removeConsecutiveSameWord(String input)
     {
+        //String regex = "\\b(\\w+)(\\W+\\1\\b)+";
         String regex = "\\b(\\w+)(\\W+\\1\\b)+";
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         String output = input;
 
         Matcher m = p.matcher(input);
         while (m.find()) {
+            if(m.group().contains("-")) continue;
             output = output.replaceAll(m.group(), m.group(1));
             Log.d("KEKEKE", "removeConsecutiveSameWord: " + output);
             addListBasic2Output(m.group(), input);

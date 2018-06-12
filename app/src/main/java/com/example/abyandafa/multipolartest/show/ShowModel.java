@@ -59,7 +59,11 @@ public class ShowModel implements ShowMVP.Model {
                 int j = 100;
                 while (output.length()> j )
                 {
+                    Log.d("KALALA", "updateValue j: " + j);
+                    Log.d("AZAS", "updateValue outputlength: " + output.length());
+                    Log.d("AZAS", "updateValue id current: " + currentRow.getId());
                     char a = output.charAt(j);
+                    Log.d("AZAS", "updateValue nilai a: " + a);
                     if(Character.toString(a).equals(" "))
                     {
                         j++;
@@ -67,7 +71,8 @@ public class ShowModel implements ShowMVP.Model {
                     }
                     j++;
                 }
-                output.substring(0, j-1);
+                output = output.substring(0, j-1);
+                output += "....";
             }
             currentRow.setOutput(output);
         }
